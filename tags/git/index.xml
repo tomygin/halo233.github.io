@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on 晴空</title>
+    <link>https://halo233.github.io/tags/git/</link>
+    <description>Recent content in Git on 晴空</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git配置Github</title>
+      <link>https://halo233.github.io/p/git%E9%85%8D%E7%BD%AEgithub/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/git%E9%85%8D%E7%BD%AEgithub/</guid>
+      <description>hugo来生成博客确实爽，快得一批。 我想把我的博客上传到网上，这样就可以在任意设备访问自己的博客。 最后我选择了Github，香得一批。 但是每</description>
+    </item>
+    
+  </channel>
+</rss>

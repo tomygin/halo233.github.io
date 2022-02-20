@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lua on 晴空</title>
+    <link>https://halo233.github.io/tags/lua/</link>
+    <description>Recent content in Lua on 晴空</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Feb 2022 18:16:09 +0800</lastBuildDate><atom:link href="https://halo233.github.io/tags/lua/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows上go编译器和lua解释器的安装</title>
+      <link>https://halo233.github.io/p/windows%E4%B8%8Ago%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8Clua%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 07 Feb 2022 18:16:09 +0800</pubDate>
+      
+      <guid>https://halo233.github.io/p/windows%E4%B8%8Ago%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8Clua%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+      <description>Lua Lua解释器下载后解压发现并不是lua.exe 而是lua54.exe 最简单有效的办法是把 lua54.exe 重命名为 lua.exe 然后把该目录添加到环境变量 GO Go的编译</description>
+    </item>
+    
+  </channel>
+</rss>

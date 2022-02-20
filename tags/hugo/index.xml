@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 晴空</title>
+    <link>https://halo233.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on 晴空</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>stack主题</title>
+      <link>https://halo233.github.io/p/stack%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/stack%E4%B8%BB%E9%A2%98/</guid>
+      <description>今天心血来潮把博客主题换了，话说stack真的好看 本来以为要批量改页眉，居然可以通用！ 保留作者信息 按照我以前的习惯一般都是毫不留情地删除不需</description>
+    </item>
+    
+    <item>
+      <title>第一篇博文</title>
+      <link>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
+      <description>博客建设 博客使用 hugo 生成 ，用 typora 编写文档 主题使用的是 hermit 我选了一个下午，最后还是决定使用这款简约的主题 不是有些主题无法运行 主题修改部分 去掉了那个由</description>
+    </item>
+    
+  </channel>
+</rss>

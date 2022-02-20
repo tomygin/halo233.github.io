@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>晴空</title>
+        <link>https://halo233.github.io/</link>
+        <description>Recent content on 晴空</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>stack主题</title>
+        <link>https://halo233.github.io/p/stack%E4%B8%BB%E9%A2%98/</link>
+        <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/stack%E4%B8%BB%E9%A2%98/</guid>
+        <description>&lt;img src="https://browser9.qhimg.com/bdm/1000_618_80/t010448c46c1ecf7cab.jpg" alt="Featured image of post stack主题" /&gt;今天心血来潮把博客主题换了，话说stack真的好看 本来以为要批量改页眉，居然可以通用！ 保留作者信息 按照我以前的习惯一般都是毫不留情地删除不需</description>
+        </item>
+        <item>
+        <title>多文件模块编程</title>
+        <link>https://halo233.github.io/p/%E5%A4%9A%E6%96%87%E4%BB%B6%E6%A8%A1%E5%9D%97%E7%BC%96%E7%A8%8B/</link>
+        <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/%E5%A4%9A%E6%96%87%E4%BB%B6%E6%A8%A1%E5%9D%97%E7%BC%96%E7%A8%8B/</guid>
+        <description>主要说说C的多文件模块编程，还有一点CGO C的模块编程 主要是把函数封装成库，比如现在的C文件下有main函数，有A函数，有B函数，有C函数，</description>
+        </item>
+        <item>
+        <title>元宵快乐</title>
+        <link>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</link>
+        <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</guid>
+        <description>说好先安静一下，但是我就是控制不住自己 说说今天的事吧，今天体验了一下Kali的arp欺骗，亲测可用在B站无意看到的 体验了一下断网 1 2 3 4 5 6</description>
+        </item>
+        <item>
+        <title>从新整理，再出发</title>
+        <link>https://halo233.github.io/p/%E4%BB%8E%E6%96%B0%E6%95%B4%E7%90%86%E5%86%8D%E5%87%BA%E5%8F%91/</link>
+        <pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/%E4%BB%8E%E6%96%B0%E6%95%B4%E7%90%86%E5%86%8D%E5%87%BA%E5%8F%91/</guid>
+        <description>说说今天的事吧 第一件事就是 我搭建了一个免流服务器，用的是别人的脚本 1 2 yum -y install wget wget --no-check-certificate https://startml.net/bash/pj.sh &amp;amp;&amp;amp; bash pj.sh 系统是centos7而centos8会乱码，直接把</description>
+        </item>
+        <item>
+        <title>Git配置Github</title>
+        <link>https://halo233.github.io/p/git%E9%85%8D%E7%BD%AEgithub/</link>
+        <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/git%E9%85%8D%E7%BD%AEgithub/</guid>
+        <description>hugo来生成博客确实爽，快得一批。 我想把我的博客上传到网上，这样就可以在任意设备访问自己的博客。 最后我选择了Github，香得一批。 但是每</description>
+        </item>
+        <item>
+        <title>单向链表</title>
+        <link>https://halo233.github.io/p/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8/</link>
+        <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8/</guid>
+        <description>之前在学校吃了几次链表的亏，后来狠心把链表学了 C语言作为自己的学习语言，Go语言和Java作为自己的开发语言有空再学学js，这学期要把紫罗兰</description>
+        </item>
+        <item>
+        <title>Go进度条复刻</title>
+        <link>https://halo233.github.io/p/go%E8%BF%9B%E5%BA%A6%E6%9D%A1%E5%A4%8D%E5%88%BB/</link>
+        <pubDate>Thu, 10 Feb 2022 10:23:09 +0800</pubDate>
+        
+        <guid>https://halo233.github.io/p/go%E8%BF%9B%E5%BA%A6%E6%9D%A1%E5%A4%8D%E5%88%BB/</guid>
+        <description>整理之前的文档找到的进度条 之前模仿某位大佬写的，今天正好复刻一次 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38</description>
+        </item>
+        <item>
+        <title>整理一些Go包</title>
+        <link>https://halo233.github.io/p/%E6%95%B4%E7%90%86%E4%B8%80%E4%BA%9Bgo%E5%8C%85/</link>
+        <pubDate>Wed, 09 Feb 2022 17:10:09 +0800</pubDate>
+        
+        <guid>https://halo233.github.io/p/%E6%95%B4%E7%90%86%E4%B8%80%E4%BA%9Bgo%E5%8C%85/</guid>
+        <description>整理一些Go包 goyaml 其中goyaml-struct-tag 标签是 ``符号,而不是 &#39;&#39;符号，正确的符号在键盘左上方 1 2 3 4 5 6 goyaml使用 data, _</description>
+        </item>
+        <item>
+        <title>Windows上go编译器和lua解释器的安装</title>
+        <link>https://halo233.github.io/p/windows%E4%B8%8Ago%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8Clua%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+        <pubDate>Mon, 07 Feb 2022 18:16:09 +0800</pubDate>
+        
+        <guid>https://halo233.github.io/p/windows%E4%B8%8Ago%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8Clua%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+        <description>Lua Lua解释器下载后解压发现并不是lua.exe 而是lua54.exe 最简单有效的办法是把 lua54.exe 重命名为 lua.exe 然后把该目录添加到环境变量 GO Go的编译</description>
+        </item>
+        <item>
+        <title>第一篇博文</title>
+        <link>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
+        <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
+        <description>&lt;img src="https://w.wallhaven.cc/full/k7/wallhaven-k7v9yq.png" alt="Featured image of post 第一篇博文" /&gt;博客建设 博客使用 hugo 生成 ，用 typora 编写文档 主题使用的是 hermit 我选了一个下午，最后还是决定使用这款简约的主题 不是有些主题无法运行 主题修改部分 去掉了那个由</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>渗透 on 晴空</title>
+    <link>https://halo233.github.io/tags/%E6%B8%97%E9%80%8F/</link>
+    <description>Recent content in 渗透 on 晴空</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/%E6%B8%97%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>元宵快乐</title>
+      <link>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</guid>
+      <description>说好先安静一下，但是我就是控制不住自己 说说今天的事吧，今天体验了一下Kali的arp欺骗，亲测可用在B站无意看到的 体验了一下断网 1 2 3 4 5 6</description>
+    </item>
+    
+  </channel>
+</rss>

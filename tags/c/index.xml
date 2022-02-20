@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on 晴空</title>
+    <link>https://halo233.github.io/tags/c/</link>
+    <description>Recent content in C on 晴空</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多文件模块编程</title>
+      <link>https://halo233.github.io/p/%E5%A4%9A%E6%96%87%E4%BB%B6%E6%A8%A1%E5%9D%97%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/%E5%A4%9A%E6%96%87%E4%BB%B6%E6%A8%A1%E5%9D%97%E7%BC%96%E7%A8%8B/</guid>
+      <description>主要说说C的多文件模块编程，还有一点CGO C的模块编程 主要是把函数封装成库，比如现在的C文件下有main函数，有A函数，有B函数，有C函数，</description>
+    </item>
+    
+    <item>
+      <title>单向链表</title>
+      <link>https://halo233.github.io/p/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8/</guid>
+      <description>之前在学校吃了几次链表的亏，后来狠心把链表学了 C语言作为自己的学习语言，Go语言和Java作为自己的开发语言有空再学学js，这学期要把紫罗兰</description>
+    </item>
+    
+  </channel>
+</rss>
