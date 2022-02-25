@@ -6,7 +6,15 @@
         <description>Recent content on 晴空</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>并发和并行</title>
+        <link>https://halo233.github.io/p/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C/</link>
+        <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C/</guid>
+        <description>&lt;img src="https://pic1.zhimg.com/80/v2-73b8307b2db44c617f4e8515ce67dd39_1440w.jpg?source=1940ef5c" alt="Featured image of post 并发和并行" /&gt;并发和并行的区别 比如你正在吃饭，这个时候突然手机来了电话，电话在响，你还是在吃饭，吃完了饭才开始接电话 这就是不支持并发和并行 你还是在吃饭，这</description>
+        </item>
+        <item>
         <title>GitHubPage绑定二级域名</title>
         <link>https://halo233.github.io/p/githubpage%E7%BB%91%E5%AE%9A%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D/</link>
         <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>

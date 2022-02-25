@@ -6,7 +6,16 @@
     <description>Recent content in Go on 晴空</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>并发和并行</title>
+      <link>https://halo233.github.io/p/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C/</guid>
+      <description>并发和并行的区别 比如你正在吃饭，这个时候突然手机来了电话，电话在响，你还是在吃饭，吃完了饭才开始接电话 这就是不支持并发和并行 你还是在吃饭，这</description>
+    </item>
+    
     <item>
       <title>单向链表</title>
       <link>https://halo233.github.io/p/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8/</link>
