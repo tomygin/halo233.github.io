@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='基础类型的声明和使用'><title>Go类型</title>
+
+<link rel='canonical' href='https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/'>
+
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Go类型'>
+<meta property='og:description' content='基础类型的声明和使用'>
+<meta property='og:url' content='https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/'>
+<meta property='og:site_name' content='晴空'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Go' /><meta property='article:published_time' content='2022-03-03T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-03-03T00:00:00&#43;00:00'/><meta property='og:image' content='https://pic.3gbizhi.com/2021/1228/thumb_1680_0_20211228042031718.jpg' />
+<meta name="twitter:title" content="Go类型">
+<meta name="twitter:description" content="基础类型的声明和使用"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://pic.3gbizhi.com/2021/1228/thumb_1680_0_20211228042031718.jpg' />
+    <link rel="shortcut icon" href="https://www.logosc.cn/oss/icons/2021/12/21/IdtaalRaZAAsx6B.png" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "dark");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/go%E7%B1%BB%E5%9E%8B/">
+                
+                    <img src="https://pic.3gbizhi.com/2021/1228/thumb_1680_0_20211228042031718.jpg" loading="lazy" alt="Featured image of post Go类型" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/p/go%E7%B1%BB%E5%9E%8B/">Go类型</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        基础类型的声明和使用
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 03, 2022</time>
+            </div>
+        
+
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="基础类型的申明">基础类型的申明</h2>
+<p>GO声明后自动初始化</p>
+<p>make: 用于slice，map，和channel的初始化</p>
+<p>导出性原则 首字母大写</p>
+<h3 id="type">type</h3>
+<p>定义自己的类型</p>
+<p>type   IZ    int</p>
+<p>类型拷贝</p>
+<p>type  IZ  = int</p>
+<h3 id="类型转换">类型转换</h3>
+<p>typeB(typeA)</p>
+<h3 id="make和new的区别">make和new的区别</h3>
+<p>new返回一个指向类型为 T，值为 0 的地址的指针</p>
+<p>var p *[]int = new([]int) 	// *p == nil;	with len and cap 0</p>
+<p>p := new([]int)</p>
+<p>make 返回一个类型为 T 的初始值</p>
+<p>var v []int = make([]int, 10, 50)</p>
+<p>v := make([]int, 10, 50)</p>
+<h3 id="常量">常量</h3>
+<h4 id="换行">换行</h4>
+<p>const text  =</p>
+<p>0.368236\   		//常量换行不结束</p>
+<p>639852</p>
+<h4 id="iota">iota</h4>
+<p>const (
+a = iota  //	0   			遇到const重置为0
+b   //	1
+c   //	2
+)</p>
+<h3 id="变量">变量</h3>
+<p>var 变量适合于全局变量</p>
+<h4 id="整形">整形</h4>
+<p>go语言中的int的大小是和操作系统位数相关的，如果是32位操作系统，int类型的大小就是4字节。</p>
+<p>如果是64位操作系统，int类型的大小就是8个字节</p>
+<h4 id="一般情况">一般情况</h4>
+<p>普通声明初始化</p>
+<p>var  name  type</p>
+<p>赋值</p>
+<p>name = value</p>
+<p>自定义声明初始化</p>
+<p>var  name  type  =  value</p>
+<p>编译器推断声明初始化</p>
+<p>var name  =  value</p>
+<p>简短声明初始化，实用于局部变量</p>
+<p>name := value</p>
+<h4 id="字符类型">字符类型</h4>
+<p>byte是uint 8的别名</p>
+<p>自定义声明初始化</p>
+<p>var ch byte = &lsquo;A&rsquo;</p>
+<p>rune 是int32的别名</p>
+<h4 id="复数">复数</h4>
+<p>complex 64	其中虚部实部为	float 32</p>
+<p>complex128    其中虚部实部为	float 64</p>
+<p>普通声明初始化</p>
+<p>var name complex128</p>
+<p>赋值</p>
+<p>name = complex (x, y)</p>
+<p>name = 888 + 999 i</p>
+<p>自定义声明初始化</p>
+<p>var name complex128 = complex(x, y)</p>
+<p>简短声明初始化</p>
+<p>name := complex(x, y)</p>
+<p>name := 888 +666i</p>
+<p>获取实部  real(name)</p>
+<p>过去虚部 imag(name)</p>
+<h4 id="指针变量">指针变量</h4>
+<p>一般声明初始化</p>
+<p>var intpr *int</p>
+<p>赋值</p>
+<p>intpr = &amp;n</p>
+<p>自定义声明初始化</p>
+<p>var intpr *int = &amp;n</p>
+<p>简短声明初始化</p>
+<p>p := &amp;n</p>
+<h3 id="数组">数组</h3>
+<p>一般声明初始化</p>
+<p>var arr [len]type</p>
+<p>赋值</p>
+<p>arr[i] = value</p>
+<p>自定义声明</p>
+<p>var arr = [5]int{1 8, 20, 15,  22, 16}</p>
+<p>编译器推断声明初始化</p>
+<p>var arr = [&hellip;]int{ 5,  6,  7,  8,  22}</p>
+<p>部分自定义声明初始化</p>
+<p>var arr = [5]int{3: 222, 4: 999}</p>
+<p>简短声明初始化</p>
+<p>a := [&hellip;]int{222，444，555，999}</p>
+<h3 id="切片">切片</h3>
+<p>声明</p>
+<p>var slice1 []type</p>
+<p>赋值</p>
+<p>slice1 []type = arr1[start:end]</p>
+<p>slice1 = &amp;arr1</p>
+<p>一般声明初始化</p>
+<p>var slice1 []type = arr1[start:end]</p>
+<p>slice1 := make([]type, start_length, capacity)</p>
+<p>追加</p>
+<p>slice1 = append(slice1, slice2&hellip;)</p>
+<h3 id="字典">字典</h3>
+<p>声明</p>
+<p>var map1 map[keytype]valuetype</p>
+<p>初始化</p>
+<p>map1 = map[string]int{&ldquo;one&rdquo;: 1, &ldquo;two&rdquo;: 2}</p>
+<p>map1 = map[string]int{}	//初始化一个空字典</p>
+<p>自定义声明初始化</p>
+<p>var map1 map[string]int = map[string]int{&ldquo;hunter&rdquo;:12,&ldquo;tony&rdquo;:10}</p>
+<p>推断声明初始化</p>
+<p>var map1 = map[string]int{&ldquo;one&rdquo;: 1, &ldquo;two&rdquo;: 2}</p>
+<p>简短声明初始化</p>
+<p>map1 = map[string]int{&ldquo;one&rdquo;: 1, &ldquo;two&rdquo;: 2}</p>
+<p>make声明初始化</p>
+<p>mapHaiCoder := make(map[string]string, 3)	//3是容量</p>
+<p>超出容量时会自动扩容，但尽量提供一个合理的初始值</p>
+<p>赋值</p>
+<p>map1[key1] = val1</p>
+<p>读取</p>
+<p>v := map1[key1]</p>
+<p>删除</p>
+<p>delete(map1,kay)</p>
+<h3 id="结构体">结构体</h3>
+<p>定义一个自己的结构体</p>
+<p>type T struct {</p>
+<p>field1 type1</p>
+<p>field2 type2</p>
+<p>&hellip;</p>
+<p>}</p>
+<p>声明自己的结构体</p>
+<p>var s T</p>
+<p>结构体初始化</p>
+<p>s = struct1{10, 15.5, &ldquo;Chris&rdquo;}</p>
+<p>修改结构体内部字段</p>
+<p>s.a = 5</p>
+<p>s.b = 8</p>
+<h4 id="结构体指针">结构体指针</h4>
+<p>&amp;struct1{a, b, c} 是一种简写，底层仍然会调用 new ()</p>
+<h4 id="结构体内嵌结构体">结构体内嵌结构体</h4>
+<p>type innerS struct {</p>
+<p>in1 int</p>
+<p>in2 int</p>
+<p>}</p>
+<p>type outerS struct {</p>
+<p>b  int</p>
+<p>c  float32</p>
+<p>int // anonymous field</p>
+<p>innerS //anonymous field
+}</p>
+<p>func main() {</p>
+<p>outer := new(outerS)</p>
+<p>outer.b = 6</p>
+<p>outer.c = 7.5</p>
+<p>outer.in1 = 5</p>
+<p>outer.in2 = 1</p>
+<p>}</p>
+<h4 id="结构体命名冲突">结构体命名冲突</h4>
+<p>type A struct {a int}</p>
+<p>type B struct {a, b int}</p>
+<p>type C struct {A; B}</p>
+<p>var c C</p>
+<p>报错	c.a，编译器不知道是A中的还是B中的</p>
+<p>正确 	c.A.a</p>
+<p>todo</p>
+<h3 id="接口">接口</h3>
+<p>信道
+信道声明
+var a chan int
+a := make(chan int) 
+单向信道</p>
+<h3 id="信道">信道</h3>
+<h3 id="站位符">站位符</h3>
+<p><a class="link" href="https://www.jianshu.com/p/66aaf908045e"  target="_blank" rel="noopener"
+    >点击这里</a></p>
+<hr>
+<p>下期预告：用Go实现爬虫</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/go/">Go</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 晴空
+    </section>
+    
+    <section class="powerby">
+        
+            自豪地由Hugo驱动 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#基础类型的申明">基础类型的申明</a>
+      <ol>
+        <li><a href="#type">type</a></li>
+        <li><a href="#类型转换">类型转换</a></li>
+        <li><a href="#make和new的区别">make和new的区别</a></li>
+        <li><a href="#常量">常量</a>
+          <ol>
+            <li><a href="#换行">换行</a></li>
+            <li><a href="#iota">iota</a></li>
+          </ol>
+        </li>
+        <li><a href="#变量">变量</a>
+          <ol>
+            <li><a href="#整形">整形</a></li>
+            <li><a href="#一般情况">一般情况</a></li>
+            <li><a href="#字符类型">字符类型</a></li>
+            <li><a href="#复数">复数</a></li>
+            <li><a href="#指针变量">指针变量</a></li>
+          </ol>
+        </li>
+        <li><a href="#数组">数组</a></li>
+        <li><a href="#切片">切片</a></li>
+        <li><a href="#字典">字典</a></li>
+        <li><a href="#结构体">结构体</a>
+          <ol>
+            <li><a href="#结构体指针">结构体指针</a></li>
+            <li><a href="#结构体内嵌结构体">结构体内嵌结构体</a></li>
+            <li><a href="#结构体命名冲突">结构体命名冲突</a></li>
+          </ol>
+        </li>
+        <li><a href="#接口">接口</a></li>
+        <li><a href="#信道">信道</a></li>
+        <li><a href="#站位符">站位符</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

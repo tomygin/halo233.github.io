@@ -6,7 +6,16 @@
     <description>Recent content in Go on 晴空</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go类型</title>
+      <link>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</guid>
+      <description>基础类型的申明 GO声明后自动初始化 make: 用于slice，map，和channel的初始化 导出性原则 首字母大写 type 定义自己的类型 type IZ int 类型拷贝 type IZ =</description>
+    </item>
+    
     <item>
       <title>并发和并行</title>
       <link>https://halo233.github.io/p/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C/</link>
