@@ -13,7 +13,7 @@
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</guid>
-      <description>基础类型的申明 GO声明后自动初始化 make: 用于slice，map，和channel的初始化 导出性原则 首字母大写 type 定义自己的类型 type IZ int 类型拷贝 type IZ =</description>
+      <description>基础类型的申明 GO声明后自动初始化 导出性原则 首字母大写 type 定义自己的类型 type IZ int 类型拷贝 type IZ = int 类型转换 typeB(typeA) make和new的区别 new new返回一个</description>
     </item>
     
     <item>

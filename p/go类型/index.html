@@ -113,172 +113,435 @@
     
     <h2 id="基础类型的申明">基础类型的申明</h2>
 <p>GO声明后自动初始化</p>
-<p>make: 用于slice，map，和channel的初始化</p>
 <p>导出性原则 首字母大写</p>
 <h3 id="type">type</h3>
 <p>定义自己的类型</p>
-<p>type   IZ    int</p>
+<p><code>type   IZ    int </code></p>
 <p>类型拷贝</p>
-<p>type  IZ  = int</p>
+<p><code>type  IZ  = int</code></p>
 <h3 id="类型转换">类型转换</h3>
-<p>typeB(typeA)</p>
+<p><code>typeB(typeA)</code></p>
 <h3 id="make和new的区别">make和new的区别</h3>
+<h4 id="new">new</h4>
 <p>new返回一个指向类型为 T，值为 0 的地址的指针</p>
-<p>var p *[]int = new([]int) 	// *p == nil;	with len and cap 0</p>
-<p>p := new([]int)</p>
+<p><code>var p *[]int = new([]int) </code></p>
+<p>// *p == nil</p>
+<p>// with len and cap 0</p>
+<p><code>p := new([]int)</code></p>
+<h5 id="new-和-type-的不同处">new 和 &amp;type 的不同处</h5>
+<p>new初始化的值为默认值，不支持自定义的值</p>
+<p>&amp;type初始化可以是自定义的值</p>
+<h5 id="new和type的相同之处">new和&amp;type的相同之处</h5>
+<p>返回的都是指针</p>
+<h4 id="make">make</h4>
 <p>make 返回一个类型为 T 的初始值</p>
-<p>var v []int = make([]int, 10, 50)</p>
-<p>v := make([]int, 10, 50)</p>
+<p><code>var v []int = make([]int, 10, 50)</code></p>
+<p><code>v := make([]int, 10, 50)</code></p>
+<p>make: 用于slice，map，和channel的初始化</p>
+<blockquote>
+<p><a class="link" href="https://blog.csdn.net/hbuxiaofei/article/details/107291551"  target="_blank" rel="noopener"
+    >引用文章</a></p>
+</blockquote>
 <h3 id="常量">常量</h3>
 <h4 id="换行">换行</h4>
-<p>const text  =</p>
-<p>0.368236\   		//常量换行不结束</p>
-<p>639852</p>
-<h4 id="iota">iota</h4>
-<p>const (
-a = iota  //	0   			遇到const重置为0
-b   //	1
-c   //	2
-)</p>
-<h3 id="变量">变量</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">const text  = 
+
+0.368236\   		//常量换行不结束
+
+639852
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="iota">iota</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">const</span> <span class="p">(</span>
+
+  <span class="nx">a</span> <span class="p">=</span> <span class="kc">iota</span>  
+
+<span class="c1">//	a = 0   			iota遇到const重置为0
+</span><span class="c1"></span>
+  <span class="nx">b</span>   
+
+<span class="c1">//	b = 1
+</span><span class="c1"></span>
+  <span class="nx">c</span>   
+
+<span class="c1">//	c = 2
+</span><span class="c1"></span>
+<span class="p">)</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="变量">变量</h3>
 <p>var 变量适合于全局变量</p>
 <h4 id="整形">整形</h4>
 <p>go语言中的int的大小是和操作系统位数相关的，如果是32位操作系统，int类型的大小就是4字节。</p>
 <p>如果是64位操作系统，int类型的大小就是8个字节</p>
 <h4 id="一般情况">一般情况</h4>
 <p>普通声明初始化</p>
-<p>var  name  type</p>
+<p><code>var  name  type</code></p>
 <p>赋值</p>
-<p>name = value</p>
+<p><code>name = value</code></p>
 <p>自定义声明初始化</p>
-<p>var  name  type  =  value</p>
+<p><code>var  name  type  =  value</code></p>
 <p>编译器推断声明初始化</p>
-<p>var name  =  value</p>
+<p><code>var name  =  value</code></p>
 <p>简短声明初始化，实用于局部变量</p>
-<p>name := value</p>
+<p><code>name := value </code></p>
 <h4 id="字符类型">字符类型</h4>
 <p>byte是uint 8的别名</p>
 <p>自定义声明初始化</p>
-<p>var ch byte = &lsquo;A&rsquo;</p>
+<p><code>var ch byte = 'A'</code></p>
 <p>rune 是int32的别名</p>
 <h4 id="复数">复数</h4>
 <p>complex 64	其中虚部实部为	float 32</p>
 <p>complex128    其中虚部实部为	float 64</p>
 <p>普通声明初始化</p>
-<p>var name complex128</p>
+<p><code>var name complex128</code></p>
 <p>赋值</p>
-<p>name = complex (x, y)</p>
-<p>name = 888 + 999 i</p>
+<p><code>name = complex (x, y)</code></p>
+<p><code>name = 888 + 999 i</code></p>
 <p>自定义声明初始化</p>
-<p>var name complex128 = complex(x, y)</p>
+<p><code>var name complex128 = complex(x, y)</code></p>
 <p>简短声明初始化</p>
-<p>name := complex(x, y)</p>
-<p>name := 888 +666i</p>
-<p>获取实部  real(name)</p>
-<p>过去虚部 imag(name)</p>
+<p><code>name := complex(x, y)</code></p>
+<p><code>name := 888 +666i</code></p>
+<p>获取实部 <code>real(name)</code></p>
+<p>过去虚部 <code>imag(name)</code></p>
 <h4 id="指针变量">指针变量</h4>
 <p>一般声明初始化</p>
-<p>var intpr *int</p>
+<p><code>var intpr *int</code></p>
 <p>赋值</p>
-<p>intpr = &amp;n</p>
+<p><code>intpr = &amp;n</code></p>
 <p>自定义声明初始化</p>
-<p>var intpr *int = &amp;n</p>
+<p><code>var intpr *int = &amp;n</code></p>
 <p>简短声明初始化</p>
-<p>p := &amp;n</p>
+<p><code>p := &amp;n</code></p>
 <h3 id="数组">数组</h3>
 <p>一般声明初始化</p>
-<p>var arr [len]type</p>
+<p><code>var arr [len]type</code></p>
 <p>赋值</p>
-<p>arr[i] = value</p>
+<p><code>arr[i] = value</code></p>
 <p>自定义声明</p>
-<p>var arr = [5]int{1 8, 20, 15,  22, 16}</p>
+<p><code>var arr = [5]int{1 8, 20, 15,  22, 16}</code></p>
 <p>编译器推断声明初始化</p>
-<p>var arr = [&hellip;]int{ 5,  6,  7,  8,  22}</p>
+<p><code>var arr = [...]int{ 5,  6,  7,  8,  22}</code></p>
 <p>部分自定义声明初始化</p>
-<p>var arr = [5]int{3: 222, 4: 999}</p>
+<p><code>var arr = [5]int{3: 222, 4: 999}</code></p>
 <p>简短声明初始化</p>
-<p>a := [&hellip;]int{222，444，555，999}</p>
+<p><code>a := [...]int{222，444，555，999}</code></p>
 <h3 id="切片">切片</h3>
 <p>声明</p>
-<p>var slice1 []type</p>
+<p><code>var slice1 []type</code></p>
 <p>赋值</p>
-<p>slice1 []type = arr1[start:end]</p>
-<p>slice1 = &amp;arr1</p>
+<p><code>slice1 []type = arr1[start:end]</code></p>
+<p><code>slice1 = &amp;arr1</code></p>
+<p><code>slice1 = slicex[a :b]</code></p>
+<p>// 不包含b但是包含a，切片元素个数为b-a</p>
 <p>一般声明初始化</p>
-<p>var slice1 []type = arr1[start:end]</p>
-<p>slice1 := make([]type, start_length, capacity)</p>
+<p><code>var slice1 []type = arr1[start:end]</code></p>
+<p><code>slice1 := make([]type, start_length, capacity)</code></p>
 <p>追加</p>
-<p>slice1 = append(slice1, slice2&hellip;)</p>
+<p><code>slice1 = append(slice1, slice2...)</code></p>
 <h3 id="字典">字典</h3>
 <p>声明</p>
-<p>var map1 map[keytype]valuetype</p>
+<p><code>var map1 map[keytype]valuetype</code></p>
 <p>初始化</p>
-<p>map1 = map[string]int{&ldquo;one&rdquo;: 1, &ldquo;two&rdquo;: 2}</p>
-<p>map1 = map[string]int{}	//初始化一个空字典</p>
+<p><code>map1 = map[string]int{&quot;one&quot;: 1, &quot;two&quot;: 2}</code></p>
+<p><code>map1 = map[string]int{}	</code></p>
+<p>//初始化一个空字典</p>
 <p>自定义声明初始化</p>
-<p>var map1 map[string]int = map[string]int{&ldquo;hunter&rdquo;:12,&ldquo;tony&rdquo;:10}</p>
+<p><code>var map1 map[string]int = map[string]int{&quot;hunter&quot;:12,&quot;tony&quot;:10}</code></p>
 <p>推断声明初始化</p>
-<p>var map1 = map[string]int{&ldquo;one&rdquo;: 1, &ldquo;two&rdquo;: 2}</p>
+<p><code>var map1 = map[string]int{&quot;one&quot;: 1, &quot;two&quot;: 2}</code></p>
 <p>简短声明初始化</p>
-<p>map1 = map[string]int{&ldquo;one&rdquo;: 1, &ldquo;two&rdquo;: 2}</p>
+<p><code>map1 = map[string]int{&quot;one&quot;: 1, &quot;two&quot;: 2}</code></p>
 <p>make声明初始化</p>
-<p>mapHaiCoder := make(map[string]string, 3)	//3是容量</p>
+<p><code>mapHaiCoder := make(map[string]string, 3)	</code></p>
+<p>//3是容量</p>
 <p>超出容量时会自动扩容，但尽量提供一个合理的初始值</p>
 <p>赋值</p>
-<p>map1[key1] = val1</p>
+<p><code>map1[key1] = val1</code></p>
 <p>读取</p>
-<p>v := map1[key1]</p>
+<p><code>v := map1[key1]</code></p>
 <p>删除</p>
-<p>delete(map1,kay)</p>
+<p><code>delete(map1,kay)</code></p>
 <h3 id="结构体">结构体</h3>
 <p>定义一个自己的结构体</p>
-<p>type T struct {</p>
-<p>field1 type1</p>
-<p>field2 type2</p>
-<p>&hellip;</p>
-<p>}</p>
-<p>声明自己的结构体</p>
-<p>var s T</p>
-<p>结构体初始化</p>
-<p>s = struct1{10, 15.5, &ldquo;Chris&rdquo;}</p>
-<p>修改结构体内部字段</p>
-<p>s.a = 5</p>
-<p>s.b = 8</p>
-<h4 id="结构体指针">结构体指针</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">type</span> <span class="nx">T</span> <span class="kd">struct</span> <span class="p">{</span>
+
+  <span class="nx">field1</span> <span class="nx">type1</span>
+
+  <span class="nx">field2</span> <span class="nx">type2</span>
+
+  <span class="o">...</span>
+
+<span class="p">}</span>
+
+<span class="nx">声明自己的结构体</span>
+
+<span class="kd">var</span> <span class="nx">s</span> <span class="nx">T</span>
+
+<span class="nx">结构体初始化</span>
+
+<span class="nx">s</span> <span class="p">=</span> <span class="nx">struct1</span><span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mf">15.5</span><span class="p">,</span> <span class="s">&#34;Chris&#34;</span><span class="p">}</span>
+
+<span class="nx">修改结构体内部字段</span>
+
+<span class="nx">s</span><span class="p">.</span><span class="nx">a</span> <span class="p">=</span> <span class="mi">5</span>
+
+<span class="nx">s</span><span class="p">.</span><span class="nx">b</span> <span class="p">=</span> <span class="mi">8</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="结构体指针">结构体指针</h4>
 <p>&amp;struct1{a, b, c} 是一种简写，底层仍然会调用 new ()</p>
 <h4 id="结构体内嵌结构体">结构体内嵌结构体</h4>
-<p>type innerS struct {</p>
-<p>in1 int</p>
-<p>in2 int</p>
-<p>}</p>
-<p>type outerS struct {</p>
-<p>b  int</p>
-<p>c  float32</p>
-<p>int // anonymous field</p>
-<p>innerS //anonymous field
-}</p>
-<p>func main() {</p>
-<p>outer := new(outerS)</p>
-<p>outer.b = 6</p>
-<p>outer.c = 7.5</p>
-<p>outer.in1 = 5</p>
-<p>outer.in2 = 1</p>
-<p>}</p>
-<h4 id="结构体命名冲突">结构体命名冲突</h4>
-<p>type A struct {a int}</p>
-<p>type B struct {a, b int}</p>
-<p>type C struct {A; B}</p>
-<p>var c C</p>
-<p>报错	c.a，编译器不知道是A中的还是B中的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">type</span> <span class="nx">innerS</span> <span class="kd">struct</span> <span class="p">{</span>
+
+  <span class="nx">in1</span> <span class="kt">int</span>
+
+  <span class="nx">in2</span> <span class="kt">int</span>
+
+<span class="p">}</span>
+
+<span class="kd">type</span> <span class="nx">outerS</span> <span class="kd">struct</span> <span class="p">{</span>
+
+  <span class="nx">b</span>  	<span class="kt">int</span>
+
+  <span class="nx">c</span>  	<span class="kt">float32</span>
+
+<span class="c1">// anonymous field
+</span><span class="c1"></span>
+  <span class="kt">int</span> 
+
+<span class="c1">//anonymous field
+</span><span class="c1"></span>
+  <span class="nx">innerS</span> 
+
+<span class="p">}</span>
+
+
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="nx">outer</span> <span class="o">:=</span> <span class="nb">new</span><span class="p">(</span><span class="nx">outerS</span><span class="p">)</span>
+
+  <span class="nx">outer</span><span class="p">.</span><span class="nx">b</span> <span class="p">=</span> <span class="mi">6</span>
+
+  <span class="nx">outer</span><span class="p">.</span><span class="nx">c</span> <span class="p">=</span> <span class="mf">7.5</span>
+
+  <span class="nx">outer</span><span class="p">.</span><span class="nx">in1</span> <span class="p">=</span> <span class="mi">5</span>
+
+  <span class="nx">outer</span><span class="p">.</span><span class="nx">in2</span> <span class="p">=</span> <span class="mi">1</span>
+
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="结构体命名冲突">结构体命名冲突</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">type</span> <span class="nx">A</span> <span class="kd">struct</span> <span class="p">{</span><span class="nx">a</span> <span class="kt">int</span><span class="p">}</span>
+
+<span class="kd">type</span> <span class="nx">B</span> <span class="kd">struct</span> <span class="p">{</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="kt">int</span><span class="p">}</span>
+
+<span class="kd">type</span> <span class="nx">C</span> <span class="kd">struct</span> <span class="p">{</span><span class="nx">A</span><span class="p">;</span> <span class="nx">B</span><span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">c</span> <span class="nx">C</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>报错	c.a，编译器不知道是A中的还是B中的</p>
 <p>正确 	c.A.a</p>
-<p>todo</p>
 <h3 id="接口">接口</h3>
-<p>信道
-信道声明
-var a chan int
-a := make(chan int) 
-单向信道</p>
+<p>接口是一种类型，它规定了变量有哪些方法</p>
+<p>定义一个接口类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go">
+<span class="kd">type</span> <span class="nx">name</span> <span class="kd">interface</span><span class="p">{</span>
+
+  <span class="nf">FuncName</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="k">return</span>
+
+  <span class="nx">xxx</span>
+
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>声明某个接口类型</p>
+<p><code>var T name</code></p>
+<p>接口赋值</p>
+<p><code> x = a</code></p>
+<p><code>T = new(NokiaPhone) </code></p>
+<p>GO方法有自动解引，是传值还是引用以方法为准</p>
+<p>使用接口</p>
+<p><code>T.FuncName</code></p>
+<p>任意类型都被认为实现了空接口</p>
+<p>接口方法最好不要超过三个</p>
+<p>每个接口变量在内存中占据两个字长：</p>
+<p>一个用来存储它包含的类型，另一个用来存储它包含的数据或者指向数据的指针</p>
 <h3 id="信道">信道</h3>
+<p>声明一个信道(双向)</p>
+<p><code>var a chan int</code></p>
+<p>信道初始化</p>
+<p><code>a = make(chan int)</code></p>
+<p>简洁声明初始化</p>
+<p><code>a := make(chan int)</code></p>
+<p>有10个缓冲的信道</p>
+<p><code>a := make(chan int, 10)</code></p>
+<p>// 读取信道 a</p>
+<p><code>data := &lt;- a </code></p>
+<p>// 写入信道 a</p>
+<p><code>a &lt;- data </code></p>
+<p>单向信道</p>
+<h4 id="只读">只读</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">pipline</span> <span class="p">=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">int</span><span class="p">)</span>
+
+<span class="kd">type</span> <span class="nx">Receiver</span> <span class="p">=</span> <span class="o">&lt;-</span><span class="kd">chan</span> <span class="kt">int</span>
+
+<span class="kd">var</span> <span class="nx">receiver</span> <span class="nx">Receiver</span> <span class="p">=</span> <span class="nx">pipline</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="只写">只写</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">pipline</span> <span class="p">=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">int</span><span class="p">)</span>
+
+<span class="kd">type</span> <span class="nx">Sender</span> <span class="p">=</span> <span class="kd">chan</span><span class="o">&lt;-</span> <span class="kt">int</span>
+
+<span class="kd">var</span> <span class="nx">sender</span> <span class="nx">Sender</span> <span class="p">=</span> <span class="nx">pipline</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="关闭">关闭</h4>
+<p><code>close(pipline)</code></p>
 <h3 id="站位符">站位符</h3>
 <p><a class="link" href="https://www.jianshu.com/p/66aaf908045e"  target="_blank" rel="noopener"
     >点击这里</a></p>
@@ -457,7 +720,12 @@ a := make(chan int)
       <ol>
         <li><a href="#type">type</a></li>
         <li><a href="#类型转换">类型转换</a></li>
-        <li><a href="#make和new的区别">make和new的区别</a></li>
+        <li><a href="#make和new的区别">make和new的区别</a>
+          <ol>
+            <li><a href="#new">new</a></li>
+            <li><a href="#make">make</a></li>
+          </ol>
+        </li>
         <li><a href="#常量">常量</a>
           <ol>
             <li><a href="#换行">换行</a></li>
@@ -484,7 +752,13 @@ a := make(chan int)
           </ol>
         </li>
         <li><a href="#接口">接口</a></li>
-        <li><a href="#信道">信道</a></li>
+        <li><a href="#信道">信道</a>
+          <ol>
+            <li><a href="#只读">只读</a></li>
+            <li><a href="#只写">只写</a></li>
+            <li><a href="#关闭">关闭</a></li>
+          </ol>
+        </li>
         <li><a href="#站位符">站位符</a></li>
       </ol>
     </li>
