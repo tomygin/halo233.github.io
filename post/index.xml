@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 晴空</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GO爬虫学习笔记第0篇</title>
+      <link>https://halo233.github.io/p/go%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%AC%AC0%E7%AF%87/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://halo233.github.io/p/go%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%AC%AC0%E7%AF%87/</guid>
+      <description>记住爬虫的核心不是如何去下载数据，而是如何对下载的数据进行解析 准备 你首先需要知道goquery的基本选择语法 goquery选择器介绍 安装go</description>
+    </item>
+    
     <item>
       <title>Go类型</title>
       <link>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</link>
@@ -53,11 +62,11 @@
     </item>
     
     <item>
-      <title>元宵快乐</title>
-      <link>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</link>
+      <title>kali断网大法</title>
+      <link>https://halo233.github.io/p/kali%E6%96%AD%E7%BD%91%E5%A4%A7%E6%B3%95/</link>
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</guid>
+      <guid>https://halo233.github.io/p/kali%E6%96%AD%E7%BD%91%E5%A4%A7%E6%B3%95/</guid>
       <description>说好先安静一下，但是我就是控制不住自己 说说今天的事吧，今天体验了一下Kali的arp欺骗，亲测可用在B站无意看到的 体验了一下断网 1 2 3 4 5 6</description>
     </item>
     
@@ -117,10 +126,10 @@
     
     <item>
       <title>第一篇博文</title>
-      <link>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
+      <link>https://halo233.github.io/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://halo233.github.io/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</guid>
       <description>博客建设 博客使用 hugo 生成 ，用 typora 编写文档 主题使用的是 hermit 我选了一个下午，最后还是决定使用这款简约的主题 不是有些主题无法运行 主题修改部分 去掉了那个由</description>
     </item>
     

@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://halo233.github.io/tags/go/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+    <loc>https://halo233.github.io/p/go%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%AC%AC0%E7%AF%87/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://halo233.github.io/post/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://halo233.github.io/tags/</loc>
-    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://halo233.github.io/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halo233.github.io/tags/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</loc>
     <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://halo233.github.io/p/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C/</loc>
@@ -47,7 +53,7 @@
     <loc>https://halo233.github.io/p/%E5%A4%9A%E6%96%87%E4%BB%B6%E6%A8%A1%E5%9D%97%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</loc>
+    <loc>https://halo233.github.io/p/kali%E6%96%AD%E7%BD%91%E5%A4%A7%E6%B3%95/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://halo233.github.io/tags/%E6%B8%97%E9%80%8F/</loc>
@@ -80,13 +86,13 @@
     <loc>https://halo233.github.io/p/windows%E4%B8%8Ago%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8Clua%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2022-02-07T18:16:09+08:00</lastmod>
   </url><url>
-    <loc>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://halo233.github.io/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://halo233.github.io/categories/</loc>
   </url><url>
-    <loc>https://halo233.github.io/%E5%8F%8B%E4%BA%BA%E5%B8%90/</loc>
-  </url><url>
     <loc>https://halo233.github.io/search/</loc>
+  </url><url>
+    <loc>https://halo233.github.io/%E9%93%BE%E6%8E%A5/</loc>
   </url>
 </urlset>

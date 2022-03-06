@@ -6,13 +6,21 @@
         <description>Recent content on 晴空</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://halo233.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>GO爬虫学习笔记第0篇</title>
+        <link>https://halo233.github.io/p/go%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%AC%AC0%E7%AF%87/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://halo233.github.io/p/go%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%AC%AC0%E7%AF%87/</guid>
+        <description>记住爬虫的核心不是如何去下载数据，而是如何对下载的数据进行解析 准备 你首先需要知道goquery的基本选择语法 goquery选择器介绍 安装go</description>
+        </item>
+        <item>
         <title>Go类型</title>
         <link>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</link>
         <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
         
         <guid>https://halo233.github.io/p/go%E7%B1%BB%E5%9E%8B/</guid>
-        <description>&lt;img src="https://pic.3gbizhi.com/2021/1228/thumb_1680_0_20211228042031718.jpg" alt="Featured image of post Go类型" /&gt;基础类型的申明 GO声明后自动初始化 导出性原则 首字母大写 type 定义自己的类型 type IZ int 类型拷贝 type IZ = int 类型转换 typeB(typeA) make和new的区别 new new返回一个</description>
+        <description>&lt;img src="https://pic1.zhimg.com/v2-d8710566b4f7ce6096f92c943454503d_1440w.jpg?source=172ae18b" alt="Featured image of post Go类型" /&gt;基础类型的申明 GO声明后自动初始化 导出性原则 首字母大写 type 定义自己的类型 type IZ int 类型拷贝 type IZ = int 类型转换 typeB(typeA) make和new的区别 new new返回一个</description>
         </item>
         <item>
         <title>并发和并行</title>
@@ -20,7 +28,7 @@
         <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
         
         <guid>https://halo233.github.io/p/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C/</guid>
-        <description>&lt;img src="https://pic1.zhimg.com/v2-d8710566b4f7ce6096f92c943454503d_1440w.jpg?source=172ae18b" alt="Featured image of post 并发和并行" /&gt;并发和并行的区别 比如你正在吃饭，这个时候突然手机来了电话，电话在响，你还是在吃饭，吃完了饭才开始接电话 这就是不支持并发和并行 你还是在吃饭，这</description>
+        <description>并发和并行的区别 比如你正在吃饭，这个时候突然手机来了电话，电话在响，你还是在吃饭，吃完了饭才开始接电话 这就是不支持并发和并行 你还是在吃饭，这</description>
         </item>
         <item>
         <title>GitHubPage绑定二级域名</title>
@@ -28,7 +36,7 @@
         <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
         
         <guid>https://halo233.github.io/p/githubpage%E7%BB%91%E5%AE%9A%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D/</guid>
-        <description>&lt;img src="https://w.wallhaven.cc/full/3z/wallhaven-3z32j3.jpg" alt="Featured image of post GitHubPage绑定二级域名" /&gt;第一步 在博客仓库里面添加CNAME文件（无后缀名） 内容为你的二级域名比如 to.fucg.top 第二步 到二级域名的管理地址添加记录值 选择CNAME 记录值为你的Gi</description>
+        <description>第一步 在博客仓库里面添加CNAME文件（无后缀名） 内容为你的二级域名比如 to.fucg.top 第二步 到二级域名的管理地址添加记录值 选择CNAME 记录值为你的Gi</description>
         </item>
         <item>
         <title>stack主题</title>
@@ -47,11 +55,11 @@
         <description>主要说说C的多文件模块编程，还有一点CGO C的模块编程 主要是把函数封装成库，比如现在的C文件下有main函数，有A函数，有B函数，有C函数，</description>
         </item>
         <item>
-        <title>元宵快乐</title>
-        <link>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</link>
+        <title>kali断网大法</title>
+        <link>https://halo233.github.io/p/kali%E6%96%AD%E7%BD%91%E5%A4%A7%E6%B3%95/</link>
         <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://halo233.github.io/p/%E5%85%83%E5%AE%B5%E5%BF%AB%E4%B9%90/</guid>
+        <guid>https://halo233.github.io/p/kali%E6%96%AD%E7%BD%91%E5%A4%A7%E6%B3%95/</guid>
         <description>说好先安静一下，但是我就是控制不住自己 说说今天的事吧，今天体验了一下Kali的arp欺骗，亲测可用在B站无意看到的 体验了一下断网 1 2 3 4 5 6</description>
         </item>
         <item>
@@ -104,11 +112,11 @@
         </item>
         <item>
         <title>第一篇博文</title>
-        <link>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
+        <link>https://halo233.github.io/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</link>
         <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://halo233.github.io/p/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
-        <description>&lt;img src="https://w.wallhaven.cc/full/k7/wallhaven-k7v9yq.png" alt="Featured image of post 第一篇博文" /&gt;博客建设 博客使用 hugo 生成 ，用 typora 编写文档 主题使用的是 hermit 我选了一个下午，最后还是决定使用这款简约的主题 不是有些主题无法运行 主题修改部分 去掉了那个由</description>
+        <guid>https://halo233.github.io/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</guid>
+        <description>博客建设 博客使用 hugo 生成 ，用 typora 编写文档 主题使用的是 hermit 我选了一个下午，最后还是决定使用这款简约的主题 不是有些主题无法运行 主题修改部分 去掉了那个由</description>
         </item>
         
     </channel>
