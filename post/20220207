@@ -1,0 +1,41 @@
+---
+title: "Windows上go编译器和lua解释器的安装"
+date: 2022-02-07T18:16:09+08:00
+tags: 
+  - Go
+  - Lua
+---
+
+### Lua
+
+Lua解释器[下载](http://luabinaries.sourceforge.net/)后解压发现并不是lua.exe
+
+而是lua54.exe
+
+最简单有效的办法是把 lua54.exe 重命名为 lua.exe 然后把该目录添加到环境变量
+
+### GO
+
+Go的编译器[下载](https://golang.google.cn/dl/)后一路默认	不过个人觉得还是放在 C:\go 目录下最好
+
+但是由于是在国内很多东西GO无法使用
+
+**代理**	可以解决访问github的包的问题还有和vscode插件下载的问题
+
+七牛代理	在终端输入
+
+```go
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
+```
+
+### 环境变量
+
+刚学编程不知道这个怎么设置，走了很多路，特别记录一下
+
+打开	控制面板\系统和安全\系统\高级系统设置\环境变量
+
+点击	path	后再点击编辑再点击添加
+
+地址就填写你的编译器或者解释器的	bin目录	比如	C:\go\bin
+

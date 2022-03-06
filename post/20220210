@@ -1,0 +1,77 @@
+---
+date: 2022-02-10T10:23:09+08:00
+title: Go进度条复刻
+image: 
+tags:
+    - Go
+---
+
+
+
+#### 整理之前的文档找到的进度条
+
+之前模仿某位大佬写的，今天正好复刻一次
+
+```go
+//实现自己的Bar
+package main
+
+import (
+	"fmt"
+	"log"
+	"time"
+)
+
+type Bar struct {
+	cur     int64
+	total   int64
+	percent int64
+
+	graph string
+	rate  string
+}
+
+func (r *Bar) NewwBar(cur, total int64) {
+	if cur >= total {
+		log.Fatal("cur >= total")
+	}
+	r.cur = cur
+	r.total = total
+	r.percent = r.GetPercent()
+	r.graph = "#"
+}
+
+func (r *Bar) GetPercent() int64 {
+	return int64(float64(r.cur) / float64(r.total) * 100)
+}
+
+func (r *Bar) DisPlay(cur int64) {
+	if cur < r.cur {
+		log.Fatal("数据载入错误")
+	}
+	r.cur = cur
+	r.percent = r.GetPercent()
+	r.rate = ""
+
+	for i := 0; int64(i) <= r.percent; i += 2 {
+		r.rate += r.graph
+	}
+	fmt.Printf("\r%-50s %d%%100   %d/%d", r.rate, r.percent, r.cur, r.total)
+
+}
+
+func main() {
+	var bar Bar
+	var cur, total int64 = 0, 100
+	bar.NewwBar(cur, total)
+
+	for cur <= total {
+		bar.DisPlay(cur)
+		time.Sleep(1 * time.Millisecond)
+		cur++
+	}
+
+}
+
+```
+
